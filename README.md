@@ -4,4 +4,4 @@
 
 ## Ruas da Liberdade
 
-![ruasdaliberdade-cover](https://user-images.githubusercontent.com/23224854/166345871-5ec82b04-a800-41ff-a460-b331f28c2215.gif)
+![cover](https://user-images.githubusercontent.com/23224854/166346179-b34be510-6702-4c42-8693-ab3103b75952.gif)
