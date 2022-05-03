@@ -30,7 +30,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GithubLink />
-      <div className="absolute top-0 left-0 mt-2 ml-4">
+      <div className="mt-2 ml-4">
         <p>
           <a
             target="_blank"
@@ -59,8 +59,8 @@ function App() {
           )
         </p>
       </div>
-      <div className="mt-12 mb-4">
-        <div className="w-9/12 mx-auto h-[80vh]">
+      <div className="mt-8 mb-4 w-full md:w-9/12 mx-auto">
+        <div className="h-[80vh]">
           <Sankey
             roadType={roadType}
             category={category}
@@ -75,7 +75,7 @@ function App() {
             setCategory={setCategory}
           />
         </div>
-        <div className="w-4/6 mx-auto">
+        <div className="w-full mx-auto overflow-x-auto mt-10">
           <Table roads={roads} category={category} roadType={roadType} />
         </div>
       </div>

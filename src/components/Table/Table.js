@@ -28,7 +28,7 @@ export default function Table({ category, roadType, roads }) {
               <tr valign="top" className="">
                 <td
                   rowSpan={districtRoads.length}
-                  className="px-4 py-2 font-medium text-gray-900 "
+                  className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap"
                 >
                   <strong className="bg-slate-100 text-slate-700 px-2 py-1 mr-2 rounded text-xs font-medium">
                     {districtRoads.length}
@@ -37,15 +37,19 @@ export default function Table({ category, roadType, roads }) {
                 </td>
                 <td
                   rowSpan={firstRoads.length}
-                  className="px-4 py-2 font-medium text-gray-900 "
+                  className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap"
                 >
                   {parishes[0]}
                 </td>
-                <td className="px-4 py-2 text-gray-700 ">{firstRoads[0]}</td>
+                <td className="px-4 py-2 text-gray-700 whitespace-nowrap">
+                  {firstRoads[0]}
+                </td>
               </tr>
               {firstRoads.slice(1).map((road) => (
                 <tr key={`tb-${parishes[0]}-${road}`} valign="top" className="">
-                  <td className="px-4 py-2 text-gray-700 ">{road}</td>
+                  <td className="px-4 py-2 text-gray-700 whitespace-nowrap">
+                    {road}
+                  </td>
                 </tr>
               ))}
               {parishes.slice(1).map((parish) => {
@@ -61,11 +65,11 @@ export default function Table({ category, roadType, roads }) {
                     <tr valign="top" className="">
                       <td
                         rowSpan={parishRoads.length}
-                        className="px-4 py-2 font-medium text-gray-900 "
+                        className="px-4 py-2 font-medium text-gray-900 whitespace-nowrap"
                       >
                         {parish}
                       </td>
-                      <td className="px-4 py-2 text-gray-700 ">
+                      <td className="px-4 py-2 text-gray-700 whitespace-nowrap">
                         {parishRoads[0]}
                       </td>
                     </tr>
@@ -75,7 +79,9 @@ export default function Table({ category, roadType, roads }) {
                         valign="top"
                         className=" "
                       >
-                        <td className="px-4 py-2 text-gray-700 ">{road}</td>
+                        <td className="px-4 py-2 text-gray-700 whitespace-nowrap">
+                          {road}
+                        </td>
                       </tr>
                     ))}
                   </>
