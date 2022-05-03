@@ -30,7 +30,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GithubLink />
-      <div className="mt-2 ml-4">
+      <div className="mt-2 ml-4 w-9/12 md:w-full">
         <p>
           <a
             target="_blank"
