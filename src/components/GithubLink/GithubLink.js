@@ -5,7 +5,7 @@ export default function GithubLink() {
     <a
       target="_blank"
       rel="noopener noreferrer"
-      href="https://github.com/biamalveiro/abril-dssg"
+      href="https://github.com/biamalveiro/abril"
       className="absolute top-0 right-0 m-2"
     >
       <svg
