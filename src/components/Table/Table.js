@@ -24,7 +24,7 @@ export default function Table({ category, roadType, roads }) {
             .sort();
 
           return (
-            <tbody key={`tb-${district}`}>
+            <>
               <tr valign="top" className="">
                 <td
                   rowSpan={districtRoads.length}
@@ -57,7 +57,7 @@ export default function Table({ category, roadType, roads }) {
                   .sort();
 
                 return (
-                  <tbody key={`tb-${parish}`}>
+                  <>
                     <tr valign="top" className="">
                       <td
                         rowSpan={parishRoads.length}
@@ -78,10 +78,10 @@ export default function Table({ category, roadType, roads }) {
                         <td className="px-4 py-2 text-gray-700 ">{road}</td>
                       </tr>
                     ))}
-                  </tbody>
+                  </>
                 );
               })}
-            </tbody>
+            </>
           );
         })}
       </tbody>
