@@ -59,7 +59,7 @@ export default function Title({
   setCategory,
 }) {
   return (
-    <div className="mx-4 flex text-3xl flex-row flex-wrap justify-center gap-3 items-baseline">
+    <div className="mx-4 flex text-3xl flex-row flex-wrap justify-center gap-3 items-center">
       <p>{makeDeterminer(roadType)}</p>
       <FormControl variant="standard">
         <Select
