@@ -46,8 +46,16 @@ function App() {
         </p>
         <p className="text-slate-400 text-xs">
           <span className="font-bold">Fonte:</span> Open Street Map (dados
-          tratados pela DSSG). <span className="font-bold">Gráfico:</span>{" "}
-          Beatriz Malveiro (
+          tratados pela{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.dssg.pt/"
+            className="underline text-cyan-500 hover:text-cyan-600 "
+          >
+            DSSG
+          </a>
+          ). <span className="font-bold">Gráfico:</span> Beatriz Malveiro (
           <a
             target="_blank"
             rel="noopener noreferrer"
